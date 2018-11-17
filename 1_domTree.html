@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>DOM Tree</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<span id="s1">Hello</span>
+	<h1>标题一</h1>
+	<script>
+		window.onload =function(){
+		var body=document.body;
+		console.log(body);
+		//查找body所有子元素
+		var children=body.children;
+		console.log(children);
+		//查找body第一个直接子元素
+		var span=body.firstElementChild;
+		console.log(span);
+		//查找body最后一个直接子元素
+		var script=body.lastElementChild;
+		console.log(script);
+		//查找span后一个兄弟元素
+		var h1=span.nextElementSibling;
+		console.log(h1);
+		//查找script前一个兄弟元素
+		var h2=script.previousElementSibling;
+		console.log(h2);
+}
+		
+
+
+  </script>
+</body>
+</html>
